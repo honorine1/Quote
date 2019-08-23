@@ -3,6 +3,7 @@
     <ul>
     <li *ngFor='let quote of quotes'>
       {{ quote.name }} 
+      <app-quote-details [quote]='quote'></app-quote-details>
       <!-- {{quote.author}} -->
     </li>
   </ul>
