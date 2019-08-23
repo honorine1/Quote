@@ -6,7 +6,7 @@
         <div *ngFor='let quote of quotes ;let i= index'>
                 <li> {{quote.quote}} Created on  {{quote.voteDate|date|uppercase}}</li> 
             <div>
-                <p>{{ quote.quote }} </p>
+                
                 <button (click)='toggleDetails(i)'>Toggle Details</button>
                 <div><app-vote></app-vote></div>
             </div>
@@ -16,7 +16,7 @@
         </div>
     </div>
     <div class="col-md-6">
-      <app-form-quote (addQuote)="addNewQuote($event)"></app-form-quote>
+    <app-form-quote (addQuote)="addNewQuote($event)"></app-form-quote>
     </div>
 </div>
 </div>
