@@ -3,12 +3,15 @@
    
     <ul>
         <div *ngFor='let quote of quotes ;let i= index'>
-            <li >{{ quote.name }} </li>
+            <li >{{ quote.quote }} </li>
             <!-- <button>Upvote</button><button>Downvote</button><br> -->
             <button (click)='toggleDetails(i)'>Toggle Details</button>
             <app-quote-details *ngIf='quote.showAuthor' [quote]='quote' ></app-quote-details>
+          <div><app-vote></app-vote></div>
       <!-- {{quote.author}} -->
         </div>
+        
   </ul>
+  
  
   

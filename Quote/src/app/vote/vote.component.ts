@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit,Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-vote',
@@ -7,14 +7,17 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class VoteComponent implements OnInit {
   
-  var upvote = 0
-  var downvote = 0;
-upVote(){
-  this.upvote = this.upvote+1
+  uvote = 0
+  dvote = 0;
+upVotes(){
+  this.uvote = this.uvote+1
 }
-downVote(){
-  this.downvote = this.downvote+1
+downVotes(){
+  this.dvote = this.dvote+1
 }
+
+// @Output() upVote = new EventEmitter<boolean>();
+// @Output() downVote = new EventEmitter<boolean>();
   constructor() { }
 
   ngOnInit() {
