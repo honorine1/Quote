@@ -1,17 +1,22 @@
 
+<div class="container-fluid">
     <h1>Inspiration Quotes</h1>
-   
-    <ul>
+   <div class="row">
+    <div class="col-md-6">      
         <div *ngFor='let quote of quotes ;let i= index'>
-            <li >{{ quote.quote }} </li>
-            <!-- <button>Upvote</button><button>Downvote</button><br> -->
-            <button (click)='toggleDetails(i)'>Toggle Details</button>
-            <app-quote-details *ngIf='quote.showAuthor' [quote]='quote' ></app-quote-details>
-          <div><app-vote></app-vote></div>
-      <!-- {{quote.author}} -->
+            <div>
+                <p>{{ quote.quote }} </p>
+                <button (click)='toggleDetails(i)'>Toggle Details</button>
+                <div><app-vote></app-vote></div>
+            </div>
+           <div *ngIf='quote.showAuthor'>
+            <app-quote-details  [quote]='quote' ></app-quote-details>
+           </div>
         </div>
-        
-  </ul>
-  
- 
+    </div>
+    <div class="col-md-6">
+      <app-form-quote></app-form-quote>
+    </div>
+</div>
+</div>
   
