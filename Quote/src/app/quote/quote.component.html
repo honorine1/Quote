@@ -11,7 +11,7 @@
                 <div><app-vote></app-vote></div>
             </div>
            <div *ngIf='quote.showAuthor'>
-            <app-quote-details  [quote]='quote' ></app-quote-details>
+            <app-quote-details  (isVote) = 'deleteQuote($event,i)'[quote]='quote' ></app-quote-details>
            </div>
         </div>
     </div>
