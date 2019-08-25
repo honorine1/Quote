@@ -15,9 +15,7 @@ quoteDelete(vote:boolean){
   this.isVote.emit(vote);
 }
 
-
-
-  constructor() { }
+constructor() { }
 
   ngOnInit() {
   }
