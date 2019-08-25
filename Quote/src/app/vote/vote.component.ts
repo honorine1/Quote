@@ -15,10 +15,7 @@ upVotes(){
 downVotes(){
   this.dvote = this.dvote+1
 }
-
-// @Output() upVote = new EventEmitter<boolean>();
-// @Output() downVote = new EventEmitter<boolean>();
-  constructor() { }
+constructor() { }
 
   ngOnInit() {
   }
