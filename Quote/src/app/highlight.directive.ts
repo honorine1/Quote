@@ -8,7 +8,7 @@ export class HighlightDirective {
 
   @HostListener("click") upVotes() {
     this.highlight("highlight")
-  }
+  
   @HostListener("dblclick") onDoubleClicks() {
     this.highlight("highlight")
   }
