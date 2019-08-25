@@ -9,8 +9,7 @@
         <div class="qute"*ngFor='let quote of quotes ;let i= index'>
                 <li appHighlight > {{quote.quote}} Created on  {{quote.voteDate|date|uppercase}}</li> 
             <div>
-                
-                <button (click)='toggleDetails(i)'class="btn btn-primary">Toggle Quote Details</button>
+                <button (click)='toggleDetails(i)'class="btn btn-primary" id="but">Toggle Quote Details</button>
                 <div><app-vote></app-vote></div>
             </div>
            <div *ngIf='quote.showAuthor'>
