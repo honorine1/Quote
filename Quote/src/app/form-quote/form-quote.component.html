@@ -2,7 +2,7 @@
 <div class="container-fluid">
         <h2 class="text-center">Enter new Quote</h2>
         <hr>
-        <form (ngSubmit)='submitQuote()'#quoteForm='ngForm'>
+        <form class="form1" (ngSubmit)='submitQuote()'#quoteForm='ngForm'>
                 <div class="form-group">
       
                         <label for="PName">Your Name</label>
@@ -35,7 +35,7 @@
                 <p>Date is required</p>
             </div>
             </div>
-            <button type="submit" class="btn btn-success">Add Quote</button>
+            <button type="submit" class="btn btn-success" id="btn">Add Quote</button>
         </form>
       </div>
 

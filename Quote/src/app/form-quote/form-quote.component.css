@@ -1,0 +1,14 @@
+.form1{
+    background-image:url("https://images.wallpaperscraft.com/image/background_texture_transition_gradient_55288_1280x720.jpg");
+margin:10px;
+}
+.form-group{
+    margin:20px;
+    color:white;
+   
+}
+#btn{
+  margin-left:200px;
+
+  padding-bottom:10px; 
+}

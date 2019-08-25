@@ -1,13 +1,19 @@
 
 <div class="container-fluid">
-    <h1>Inspiration Quotes</h1>
+    <div class="row">
+        <div class="col-md-6">
+    <div class="insp">
+        <h1>Inspiration Quotes</h1> 
+    </div>  
+    </div>
+    </div>
    <div class="row">
-    <div class="col-md-6">      
-        <div *ngFor='let quote of quotes ;let i= index'>
+    <div class="col-md-7">      
+        <div class="qute"*ngFor='let quote of quotes ;let i= index'>
                 <li appHighlight > {{quote.quote}} Created on  {{quote.voteDate|date|uppercase}}</li> 
             <div>
                 
-                <button (click)='toggleDetails(i)'>Toggle Details</button>
+                <button (click)='toggleDetails(i)'class="btn btn-primary">Toggle Quote Details</button>
                 <div><app-vote></app-vote></div>
             </div>
            <div *ngIf='quote.showAuthor'>
@@ -15,7 +21,7 @@
            </div>
         </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-5">
     <app-form-quote (addQuote)="addNewQuote($event)"></app-form-quote>
     </div>
 </div>
