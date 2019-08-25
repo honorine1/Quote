@@ -1,4 +1,4 @@
-.insp{
+#insp{
     text-align: center;
     padding:20px;
     margin:10px;
@@ -9,4 +9,17 @@
     margin:2px;
     border: 1px;
     border-bottom-color:black;
+}
+.qute li{
+    text-decoration: none;
+    list-style-type: none;
+    font-family:Hepta Slab;
+    /* font-size: 15px; */
+
+}
+#d{
+    /* text-align: center; */
+    padding:20px;
+    margin:10px;
+    font-family:Hepta Slab;
 }

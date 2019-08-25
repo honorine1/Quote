@@ -1,14 +1,11 @@
 
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-md-6">
-    <div class="insp">
-        <h1>Inspiration Quotes</h1> 
-    </div>  
-    </div>
-    </div>
+
+     
+    
    <div class="row">
-    <div class="col-md-7">      
+    <div class="col-md-7">   
+            <h1 id="insp">Inspiration Quotes</h1>    
         <div class="qute"*ngFor='let quote of quotes ;let i= index'>
                 <li appHighlight > {{quote.quote}} Created on  {{quote.voteDate|date|uppercase}}</li> 
             <div>
@@ -22,7 +19,7 @@
         </div>
     </div>
     <div class="col-md-5">
-    <app-form-quote (addQuote)="addNewQuote($event)"></app-form-quote>
+    <app-form-quote (addQuote)="addNewQuote($event)" id="d"></app-form-quote>
     </div>
 </div>
 </div>
